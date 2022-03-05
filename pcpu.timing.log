@@ -1,0 +1,2140 @@
+Warning: Design 'scrypt_new_proposed' has '164' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 20
+Design : scrypt_new_proposed
+Version: N-2017.09-SP1
+Date   : Sat Sep 19 18:05:58 2020
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: ROHM18_FF
+Wire Load Model Mode: top
+
+  Startpoint: P2/DATAPATH/SHA256_CORE/DATAPATH/E_REG_REG_0_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: OUT_SCRYPT[127]
+            (output port clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  scrypt_new_proposed
+                     wl1                   ROHM18_FF
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  P2/DATAPATH/SHA256_CORE/DATAPATH/E_REG_REG_0_/C (ROHM18DFP010)
+                                                          0.00 #     0.00 r
+  P2/DATAPATH/SHA256_CORE/DATAPATH/E_REG_REG_0_/Q (ROHM18DFP010)
+                                                          0.46       0.46 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_134/B[0] (sha256_core_standard_datapath_0_DW01_add_4)
+                                                          0.00       0.46 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_134/U1/Y (ROHM18AND2P010)
+                                                          0.22       0.67 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_134/U1_1/CO (ROHM18FAD1P010)
+                                                          0.24       0.91 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_134/U1_2/CO (ROHM18FAD1P010)
+                                                          0.25       1.16 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_134/U1_3/CO (ROHM18FAD1P010)
+                                                          0.25       1.41 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_134/U1_4/CO (ROHM18FAD1P010)
+                                                          0.25       1.66 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_134/U1_5/CO (ROHM18FAD1P010)
+                                                          0.25       1.91 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_134/U1_6/CO (ROHM18FAD1P010)
+                                                          0.25       2.16 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_134/U1_7/CO (ROHM18FAD1P010)
+                                                          0.25       2.40 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_134/U1_8/CO (ROHM18FAD1P010)
+                                                          0.25       2.65 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_134/U1_9/CO (ROHM18FAD1P010)
+                                                          0.25       2.90 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_134/U1_10/CO (ROHM18FAD1P010)
+                                                          0.25       3.15 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_134/U1_11/CO (ROHM18FAD1P010)
+                                                          0.25       3.40 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_134/U1_12/CO (ROHM18FAD1P010)
+                                                          0.25       3.65 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_134/U1_13/CO (ROHM18FAD1P010)
+                                                          0.25       3.90 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_134/U1_14/CO (ROHM18FAD1P010)
+                                                          0.25       4.15 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_134/U1_15/CO (ROHM18FAD1P010)
+                                                          0.25       4.40 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_134/U1_16/CO (ROHM18FAD1P010)
+                                                          0.25       4.65 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_134/U1_17/CO (ROHM18FAD1P010)
+                                                          0.25       4.90 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_134/U1_18/CO (ROHM18FAD1P010)
+                                                          0.25       5.15 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_134/U1_19/CO (ROHM18FAD1P010)
+                                                          0.25       5.40 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_134/U1_20/CO (ROHM18FAD1P010)
+                                                          0.25       5.65 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_134/U1_21/CO (ROHM18FAD1P010)
+                                                          0.25       5.90 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_134/U1_22/CO (ROHM18FAD1P010)
+                                                          0.25       6.15 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_134/U1_23/CO (ROHM18FAD1P010)
+                                                          0.25       6.40 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_134/U1_24/CO (ROHM18FAD1P010)
+                                                          0.25       6.64 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_134/U1_25/CO (ROHM18FAD1P010)
+                                                          0.25       6.89 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_134/U1_26/CO (ROHM18FAD1P010)
+                                                          0.25       7.14 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_134/U1_27/CO (ROHM18FAD1P010)
+                                                          0.25       7.39 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_134/U1_28/CO (ROHM18FAD1P010)
+                                                          0.25       7.64 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_134/U1_29/CO (ROHM18FAD1P010)
+                                                          0.25       7.89 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_134/U1_30/CO (ROHM18FAD1P010)
+                                                          0.25       8.14 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_134/U1_31/SO (ROHM18FAD1P010)
+                                                          0.54       8.68 r
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_134/SUM[31] (sha256_core_standard_datapath_0_DW01_add_4)
+                                                          0.00       8.68 r
+  P2/DATAPATH/SHA256_CORE/DATAPATH/DIGEST_4[31] (sha256_core_standard_datapath_0)
+                                                          0.00       8.68 r
+  P2/DATAPATH/SHA256_CORE/DIGEST[127] (sha256_core_standard_0)
+                                                          0.00       8.68 r
+  P2/DATAPATH/OUT[127] (pbkdf2_2_dp)                      0.00       8.68 r
+  P2/OUT[127] (pbkdf2_2)                                  0.00       8.68 r
+  OUT_SCRYPT[127] (out)                                   0.00       8.69 r
+  data arrival time                                                  8.69
+
+  clock CLK (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  output external delay                                 -10.00      10.00
+  data required time                                                10.00
+  --------------------------------------------------------------------------
+  data required time                                                10.00
+  data arrival time                                                 -8.69
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.31
+
+
+  Startpoint: P2/DATAPATH/SHA256_CORE/DATAPATH/A_REG_REG_1_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: OUT_SCRYPT[255]
+            (output port clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  scrypt_new_proposed
+                     wl1                   ROHM18_FF
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  P2/DATAPATH/SHA256_CORE/DATAPATH/A_REG_REG_1_/C (ROHM18DFP010)
+                                                          0.00 #     0.00 r
+  P2/DATAPATH/SHA256_CORE/DATAPATH/A_REG_REG_1_/Q (ROHM18DFP010)
+                                                          0.43       0.43 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_130/B[1] (sha256_core_standard_datapath_0_DW01_add_8)
+                                                          0.00       0.43 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_130/U1_1/CO (ROHM18FAD1P010)
+                                                          0.36       0.79 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_130/U1_2/CO (ROHM18FAD1P010)
+                                                          0.25       1.04 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_130/U1_3/CO (ROHM18FAD1P010)
+                                                          0.25       1.29 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_130/U1_4/CO (ROHM18FAD1P010)
+                                                          0.25       1.54 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_130/U1_5/CO (ROHM18FAD1P010)
+                                                          0.25       1.79 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_130/U1_6/CO (ROHM18FAD1P010)
+                                                          0.25       2.04 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_130/U1_7/CO (ROHM18FAD1P010)
+                                                          0.25       2.29 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_130/U1_8/CO (ROHM18FAD1P010)
+                                                          0.25       2.53 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_130/U1_9/CO (ROHM18FAD1P010)
+                                                          0.25       2.78 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_130/U1_10/CO (ROHM18FAD1P010)
+                                                          0.25       3.03 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_130/U1_11/CO (ROHM18FAD1P010)
+                                                          0.25       3.28 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_130/U1_12/CO (ROHM18FAD1P010)
+                                                          0.25       3.53 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_130/U1_13/CO (ROHM18FAD1P010)
+                                                          0.25       3.78 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_130/U1_14/CO (ROHM18FAD1P010)
+                                                          0.25       4.03 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_130/U1_15/CO (ROHM18FAD1P010)
+                                                          0.25       4.28 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_130/U1_16/CO (ROHM18FAD1P010)
+                                                          0.25       4.53 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_130/U1_17/CO (ROHM18FAD1P010)
+                                                          0.25       4.78 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_130/U1_18/CO (ROHM18FAD1P010)
+                                                          0.25       5.03 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_130/U1_19/CO (ROHM18FAD1P010)
+                                                          0.25       5.28 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_130/U1_20/CO (ROHM18FAD1P010)
+                                                          0.25       5.53 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_130/U1_21/CO (ROHM18FAD1P010)
+                                                          0.25       5.78 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_130/U1_22/CO (ROHM18FAD1P010)
+                                                          0.25       6.03 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_130/U1_23/CO (ROHM18FAD1P010)
+                                                          0.25       6.28 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_130/U1_24/CO (ROHM18FAD1P010)
+                                                          0.25       6.53 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_130/U1_25/CO (ROHM18FAD1P010)
+                                                          0.25       6.78 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_130/U1_26/CO (ROHM18FAD1P010)
+                                                          0.25       7.03 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_130/U1_27/CO (ROHM18FAD1P010)
+                                                          0.25       7.28 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_130/U1_28/CO (ROHM18FAD1P010)
+                                                          0.25       7.53 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_130/U1_29/CO (ROHM18FAD1P010)
+                                                          0.25       7.78 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_130/U1_30/CO (ROHM18FAD1P010)
+                                                          0.25       8.02 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_130/U1_31/SO (ROHM18FAD1P010)
+                                                          0.54       8.57 r
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_130/SUM[31] (sha256_core_standard_datapath_0_DW01_add_8)
+                                                          0.00       8.57 r
+  P2/DATAPATH/SHA256_CORE/DATAPATH/DIGEST_0[31] (sha256_core_standard_datapath_0)
+                                                          0.00       8.57 r
+  P2/DATAPATH/SHA256_CORE/DIGEST[255] (sha256_core_standard_0)
+                                                          0.00       8.57 r
+  P2/DATAPATH/OUT[255] (pbkdf2_2_dp)                      0.00       8.57 r
+  P2/OUT[255] (pbkdf2_2)                                  0.00       8.57 r
+  OUT_SCRYPT[255] (out)                                   0.00       8.57 r
+  data arrival time                                                  8.57
+
+  clock CLK (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  output external delay                                 -10.00      10.00
+  data required time                                                10.00
+  --------------------------------------------------------------------------
+  data required time                                                10.00
+  data arrival time                                                 -8.57
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.43
+
+
+  Startpoint: P2/DATAPATH/SHA256_CORE/DATAPATH/C_REG_REG_0_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: OUT_SCRYPT[191]
+            (output port clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  scrypt_new_proposed
+                     wl1                   ROHM18_FF
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  P2/DATAPATH/SHA256_CORE/DATAPATH/C_REG_REG_0_/C (ROHM18DFP010)
+                                                          0.00 #     0.00 r
+  P2/DATAPATH/SHA256_CORE/DATAPATH/C_REG_REG_0_/Q (ROHM18DFP010)
+                                                          0.37       0.37 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_132/B[0] (sha256_core_standard_datapath_0_DW01_add_6)
+                                                          0.00       0.37 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_132/U1/Y (ROHM18AND2P010)
+                                                          0.19       0.56 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_132/U1_1/CO (ROHM18FAD1P010)
+                                                          0.24       0.80 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_132/U1_2/CO (ROHM18FAD1P010)
+                                                          0.25       1.05 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_132/U1_3/CO (ROHM18FAD1P010)
+                                                          0.25       1.30 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_132/U1_4/CO (ROHM18FAD1P010)
+                                                          0.25       1.54 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_132/U1_5/CO (ROHM18FAD1P010)
+                                                          0.25       1.79 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_132/U1_6/CO (ROHM18FAD1P010)
+                                                          0.25       2.04 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_132/U1_7/CO (ROHM18FAD1P010)
+                                                          0.25       2.29 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_132/U1_8/CO (ROHM18FAD1P010)
+                                                          0.25       2.54 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_132/U1_9/CO (ROHM18FAD1P010)
+                                                          0.25       2.78 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_132/U1_10/CO (ROHM18FAD1P010)
+                                                          0.25       3.03 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_132/U1_11/CO (ROHM18FAD1P010)
+                                                          0.25       3.28 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_132/U1_12/CO (ROHM18FAD1P010)
+                                                          0.25       3.53 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_132/U1_13/CO (ROHM18FAD1P010)
+                                                          0.25       3.78 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_132/U1_14/CO (ROHM18FAD1P010)
+                                                          0.25       4.02 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_132/U1_15/CO (ROHM18FAD1P010)
+                                                          0.25       4.27 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_132/U1_16/CO (ROHM18FAD1P010)
+                                                          0.25       4.52 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_132/U1_17/CO (ROHM18FAD1P010)
+                                                          0.25       4.77 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_132/U1_18/CO (ROHM18FAD1P010)
+                                                          0.25       5.02 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_132/U1_19/CO (ROHM18FAD1P010)
+                                                          0.25       5.27 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_132/U1_20/CO (ROHM18FAD1P010)
+                                                          0.25       5.51 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_132/U1_21/CO (ROHM18FAD1P010)
+                                                          0.25       5.76 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_132/U1_22/CO (ROHM18FAD1P010)
+                                                          0.25       6.01 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_132/U1_23/CO (ROHM18FAD1P010)
+                                                          0.25       6.26 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_132/U1_24/CO (ROHM18FAD1P010)
+                                                          0.25       6.51 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_132/U1_25/CO (ROHM18FAD1P010)
+                                                          0.25       6.75 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_132/U1_26/CO (ROHM18FAD1P010)
+                                                          0.25       7.00 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_132/U1_27/CO (ROHM18FAD1P010)
+                                                          0.25       7.25 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_132/U1_28/CO (ROHM18FAD1P010)
+                                                          0.25       7.50 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_132/U1_29/CO (ROHM18FAD1P010)
+                                                          0.25       7.74 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_132/U1_30/CO (ROHM18FAD1P010)
+                                                          0.25       7.99 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_132/U1_31/SO (ROHM18FAD1P010)
+                                                          0.54       8.54 r
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_132/SUM[31] (sha256_core_standard_datapath_0_DW01_add_6)
+                                                          0.00       8.54 r
+  P2/DATAPATH/SHA256_CORE/DATAPATH/DIGEST_2[31] (sha256_core_standard_datapath_0)
+                                                          0.00       8.54 r
+  P2/DATAPATH/SHA256_CORE/DIGEST[191] (sha256_core_standard_0)
+                                                          0.00       8.54 r
+  P2/DATAPATH/OUT[191] (pbkdf2_2_dp)                      0.00       8.54 r
+  P2/OUT[191] (pbkdf2_2)                                  0.00       8.54 r
+  OUT_SCRYPT[191] (out)                                   0.00       8.54 r
+  data arrival time                                                  8.54
+
+  clock CLK (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  output external delay                                 -10.00      10.00
+  data required time                                                10.00
+  --------------------------------------------------------------------------
+  data required time                                                10.00
+  data arrival time                                                 -8.54
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.46
+
+
+  Startpoint: P2/DATAPATH/SHA256_CORE/DATAPATH/H_REG_REG_0_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: OUT_SCRYPT[31]
+            (output port clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  scrypt_new_proposed
+                     wl1                   ROHM18_FF
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  P2/DATAPATH/SHA256_CORE/DATAPATH/H_REG_REG_0_/C (ROHM18DFP010)
+                                                          0.00 #     0.00 r
+  P2/DATAPATH/SHA256_CORE/DATAPATH/H_REG_REG_0_/Q (ROHM18DFP010)
+                                                          0.38       0.38 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_137/B[0] (sha256_core_standard_datapath_0_DW01_add_1)
+                                                          0.00       0.38 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_137/U1/Y (ROHM18AND2P010)
+                                                          0.19       0.57 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_137/U1_1/CO (ROHM18FAD1P010)
+                                                          0.24       0.80 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_137/U1_2/CO (ROHM18FAD1P010)
+                                                          0.25       1.05 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_137/U1_3/CO (ROHM18FAD1P010)
+                                                          0.25       1.30 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_137/U1_4/CO (ROHM18FAD1P010)
+                                                          0.25       1.55 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_137/U1_5/CO (ROHM18FAD1P010)
+                                                          0.25       1.79 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_137/U1_6/CO (ROHM18FAD1P010)
+                                                          0.25       2.04 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_137/U1_7/CO (ROHM18FAD1P010)
+                                                          0.25       2.29 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_137/U1_8/CO (ROHM18FAD1P010)
+                                                          0.25       2.54 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_137/U1_9/CO (ROHM18FAD1P010)
+                                                          0.25       2.78 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_137/U1_10/CO (ROHM18FAD1P010)
+                                                          0.25       3.03 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_137/U1_11/CO (ROHM18FAD1P010)
+                                                          0.25       3.28 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_137/U1_12/CO (ROHM18FAD1P010)
+                                                          0.25       3.53 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_137/U1_13/CO (ROHM18FAD1P010)
+                                                          0.25       3.77 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_137/U1_14/CO (ROHM18FAD1P010)
+                                                          0.25       4.02 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_137/U1_15/CO (ROHM18FAD1P010)
+                                                          0.25       4.27 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_137/U1_16/CO (ROHM18FAD1P010)
+                                                          0.25       4.52 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_137/U1_17/CO (ROHM18FAD1P010)
+                                                          0.25       4.77 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_137/U1_18/CO (ROHM18FAD1P010)
+                                                          0.25       5.01 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_137/U1_19/CO (ROHM18FAD1P010)
+                                                          0.25       5.26 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_137/U1_20/CO (ROHM18FAD1P010)
+                                                          0.25       5.51 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_137/U1_21/CO (ROHM18FAD1P010)
+                                                          0.25       5.76 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_137/U1_22/CO (ROHM18FAD1P010)
+                                                          0.25       6.00 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_137/U1_23/CO (ROHM18FAD1P010)
+                                                          0.25       6.25 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_137/U1_24/CO (ROHM18FAD1P010)
+                                                          0.25       6.50 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_137/U1_25/CO (ROHM18FAD1P010)
+                                                          0.25       6.75 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_137/U1_26/CO (ROHM18FAD1P010)
+                                                          0.25       7.00 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_137/U1_27/CO (ROHM18FAD1P010)
+                                                          0.25       7.24 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_137/U1_28/CO (ROHM18FAD1P010)
+                                                          0.25       7.49 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_137/U1_29/CO (ROHM18FAD1P010)
+                                                          0.25       7.74 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_137/U1_30/CO (ROHM18FAD1P010)
+                                                          0.25       7.99 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_137/U1_31/SO (ROHM18FAD1P010)
+                                                          0.54       8.53 r
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_137/SUM[31] (sha256_core_standard_datapath_0_DW01_add_1)
+                                                          0.00       8.53 r
+  P2/DATAPATH/SHA256_CORE/DATAPATH/DIGEST_7[31] (sha256_core_standard_datapath_0)
+                                                          0.00       8.53 r
+  P2/DATAPATH/SHA256_CORE/DIGEST[31] (sha256_core_standard_0)
+                                                          0.00       8.53 r
+  P2/DATAPATH/OUT[31] (pbkdf2_2_dp)                       0.00       8.53 r
+  P2/OUT[31] (pbkdf2_2)                                   0.00       8.53 r
+  OUT_SCRYPT[31] (out)                                    0.00       8.53 r
+  data arrival time                                                  8.53
+
+  clock CLK (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  output external delay                                 -10.00      10.00
+  data required time                                                10.00
+  --------------------------------------------------------------------------
+  data required time                                                10.00
+  data arrival time                                                 -8.53
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.47
+
+
+  Startpoint: P2/DATAPATH/SHA256_CORE/DATAPATH/D_REG_REG_0_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: OUT_SCRYPT[159]
+            (output port clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  scrypt_new_proposed
+                     wl1                   ROHM18_FF
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  P2/DATAPATH/SHA256_CORE/DATAPATH/D_REG_REG_0_/C (ROHM18DFP010)
+                                                          0.00 #     0.00 r
+  P2/DATAPATH/SHA256_CORE/DATAPATH/D_REG_REG_0_/Q (ROHM18DFP010)
+                                                          0.38       0.38 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_133/B[0] (sha256_core_standard_datapath_0_DW01_add_5)
+                                                          0.00       0.38 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_133/U1/Y (ROHM18AND2P010)
+                                                          0.19       0.57 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_133/U1_1/CO (ROHM18FAD1P010)
+                                                          0.24       0.80 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_133/U1_2/CO (ROHM18FAD1P010)
+                                                          0.25       1.05 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_133/U1_3/CO (ROHM18FAD1P010)
+                                                          0.25       1.30 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_133/U1_4/CO (ROHM18FAD1P010)
+                                                          0.25       1.54 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_133/U1_5/CO (ROHM18FAD1P010)
+                                                          0.25       1.79 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_133/U1_6/CO (ROHM18FAD1P010)
+                                                          0.25       2.04 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_133/U1_7/CO (ROHM18FAD1P010)
+                                                          0.25       2.29 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_133/U1_8/CO (ROHM18FAD1P010)
+                                                          0.25       2.54 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_133/U1_9/CO (ROHM18FAD1P010)
+                                                          0.25       2.78 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_133/U1_10/CO (ROHM18FAD1P010)
+                                                          0.25       3.03 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_133/U1_11/CO (ROHM18FAD1P010)
+                                                          0.25       3.28 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_133/U1_12/CO (ROHM18FAD1P010)
+                                                          0.25       3.53 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_133/U1_13/CO (ROHM18FAD1P010)
+                                                          0.25       3.77 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_133/U1_14/CO (ROHM18FAD1P010)
+                                                          0.25       4.02 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_133/U1_15/CO (ROHM18FAD1P010)
+                                                          0.25       4.27 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_133/U1_16/CO (ROHM18FAD1P010)
+                                                          0.25       4.52 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_133/U1_17/CO (ROHM18FAD1P010)
+                                                          0.25       4.77 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_133/U1_18/CO (ROHM18FAD1P010)
+                                                          0.25       5.01 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_133/U1_19/CO (ROHM18FAD1P010)
+                                                          0.25       5.26 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_133/U1_20/CO (ROHM18FAD1P010)
+                                                          0.25       5.51 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_133/U1_21/CO (ROHM18FAD1P010)
+                                                          0.25       5.76 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_133/U1_22/CO (ROHM18FAD1P010)
+                                                          0.25       6.00 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_133/U1_23/CO (ROHM18FAD1P010)
+                                                          0.25       6.25 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_133/U1_24/CO (ROHM18FAD1P010)
+                                                          0.25       6.50 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_133/U1_25/CO (ROHM18FAD1P010)
+                                                          0.25       6.75 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_133/U1_26/CO (ROHM18FAD1P010)
+                                                          0.25       7.00 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_133/U1_27/CO (ROHM18FAD1P010)
+                                                          0.25       7.24 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_133/U1_28/CO (ROHM18FAD1P010)
+                                                          0.25       7.49 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_133/U1_29/CO (ROHM18FAD1P010)
+                                                          0.25       7.74 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_133/U1_30/CO (ROHM18FAD1P010)
+                                                          0.25       7.99 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_133/U1_31/SO (ROHM18FAD1P010)
+                                                          0.54       8.53 r
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_133/SUM[31] (sha256_core_standard_datapath_0_DW01_add_5)
+                                                          0.00       8.53 r
+  P2/DATAPATH/SHA256_CORE/DATAPATH/DIGEST_3[31] (sha256_core_standard_datapath_0)
+                                                          0.00       8.53 r
+  P2/DATAPATH/SHA256_CORE/DIGEST[159] (sha256_core_standard_0)
+                                                          0.00       8.53 r
+  P2/DATAPATH/OUT[159] (pbkdf2_2_dp)                      0.00       8.53 r
+  P2/OUT[159] (pbkdf2_2)                                  0.00       8.53 r
+  OUT_SCRYPT[159] (out)                                   0.00       8.53 r
+  data arrival time                                                  8.53
+
+  clock CLK (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  output external delay                                 -10.00      10.00
+  data required time                                                10.00
+  --------------------------------------------------------------------------
+  data required time                                                10.00
+  data arrival time                                                 -8.53
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.47
+
+
+  Startpoint: P2/DATAPATH/SHA256_CORE/DATAPATH/F_REG_REG_0_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: OUT_SCRYPT[95]
+            (output port clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  scrypt_new_proposed
+                     wl1                   ROHM18_FF
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  P2/DATAPATH/SHA256_CORE/DATAPATH/F_REG_REG_0_/C (ROHM18DFP010)
+                                                          0.00 #     0.00 r
+  P2/DATAPATH/SHA256_CORE/DATAPATH/F_REG_REG_0_/Q (ROHM18DFP010)
+                                                          0.37       0.37 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_135/B[0] (sha256_core_standard_datapath_0_DW01_add_3)
+                                                          0.00       0.37 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_135/U1/Y (ROHM18AND2P010)
+                                                          0.19       0.56 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_135/U1_1/CO (ROHM18FAD1P010)
+                                                          0.24       0.80 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_135/U1_2/CO (ROHM18FAD1P010)
+                                                          0.25       1.05 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_135/U1_3/CO (ROHM18FAD1P010)
+                                                          0.25       1.29 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_135/U1_4/CO (ROHM18FAD1P010)
+                                                          0.25       1.54 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_135/U1_5/CO (ROHM18FAD1P010)
+                                                          0.25       1.79 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_135/U1_6/CO (ROHM18FAD1P010)
+                                                          0.25       2.04 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_135/U1_7/CO (ROHM18FAD1P010)
+                                                          0.25       2.29 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_135/U1_8/CO (ROHM18FAD1P010)
+                                                          0.25       2.53 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_135/U1_9/CO (ROHM18FAD1P010)
+                                                          0.25       2.78 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_135/U1_10/CO (ROHM18FAD1P010)
+                                                          0.25       3.03 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_135/U1_11/CO (ROHM18FAD1P010)
+                                                          0.25       3.28 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_135/U1_12/CO (ROHM18FAD1P010)
+                                                          0.25       3.52 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_135/U1_13/CO (ROHM18FAD1P010)
+                                                          0.25       3.77 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_135/U1_14/CO (ROHM18FAD1P010)
+                                                          0.25       4.02 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_135/U1_15/CO (ROHM18FAD1P010)
+                                                          0.25       4.27 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_135/U1_16/CO (ROHM18FAD1P010)
+                                                          0.25       4.52 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_135/U1_17/CO (ROHM18FAD1P010)
+                                                          0.25       4.76 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_135/U1_18/CO (ROHM18FAD1P010)
+                                                          0.25       5.01 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_135/U1_19/CO (ROHM18FAD1P010)
+                                                          0.25       5.26 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_135/U1_20/CO (ROHM18FAD1P010)
+                                                          0.25       5.51 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_135/U1_21/CO (ROHM18FAD1P010)
+                                                          0.25       5.75 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_135/U1_22/CO (ROHM18FAD1P010)
+                                                          0.25       6.00 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_135/U1_23/CO (ROHM18FAD1P010)
+                                                          0.25       6.25 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_135/U1_24/CO (ROHM18FAD1P010)
+                                                          0.25       6.50 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_135/U1_25/CO (ROHM18FAD1P010)
+                                                          0.25       6.75 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_135/U1_26/CO (ROHM18FAD1P010)
+                                                          0.25       6.99 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_135/U1_27/CO (ROHM18FAD1P010)
+                                                          0.25       7.24 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_135/U1_28/CO (ROHM18FAD1P010)
+                                                          0.25       7.49 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_135/U1_29/CO (ROHM18FAD1P010)
+                                                          0.25       7.74 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_135/U1_30/CO (ROHM18FAD1P010)
+                                                          0.25       7.98 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_135/U1_31/SO (ROHM18FAD1P010)
+                                                          0.54       8.53 r
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_135/SUM[31] (sha256_core_standard_datapath_0_DW01_add_3)
+                                                          0.00       8.53 r
+  P2/DATAPATH/SHA256_CORE/DATAPATH/DIGEST_5[31] (sha256_core_standard_datapath_0)
+                                                          0.00       8.53 r
+  P2/DATAPATH/SHA256_CORE/DIGEST[95] (sha256_core_standard_0)
+                                                          0.00       8.53 r
+  P2/DATAPATH/OUT[95] (pbkdf2_2_dp)                       0.00       8.53 r
+  P2/OUT[95] (pbkdf2_2)                                   0.00       8.53 r
+  OUT_SCRYPT[95] (out)                                    0.00       8.53 r
+  data arrival time                                                  8.53
+
+  clock CLK (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  output external delay                                 -10.00      10.00
+  data required time                                                10.00
+  --------------------------------------------------------------------------
+  data required time                                                10.00
+  data arrival time                                                 -8.53
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.47
+
+
+  Startpoint: P2/DATAPATH/SHA256_CORE/DATAPATH/B_REG_REG_0_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: OUT_SCRYPT[223]
+            (output port clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  scrypt_new_proposed
+                     wl1                   ROHM18_FF
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  P2/DATAPATH/SHA256_CORE/DATAPATH/B_REG_REG_0_/C (ROHM18DFP010)
+                                                          0.00 #     0.00 r
+  P2/DATAPATH/SHA256_CORE/DATAPATH/B_REG_REG_0_/Q (ROHM18DFP010)
+                                                          0.34       0.34 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_131/B[0] (sha256_core_standard_datapath_0_DW01_add_7)
+                                                          0.00       0.34 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_131/U1/Y (ROHM18AND2P010)
+                                                          0.18       0.51 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_131/U1_1/CO (ROHM18FAD1P010)
+                                                          0.24       0.75 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_131/U1_2/CO (ROHM18FAD1P010)
+                                                          0.25       1.00 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_131/U1_3/CO (ROHM18FAD1P010)
+                                                          0.25       1.24 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_131/U1_4/CO (ROHM18FAD1P010)
+                                                          0.25       1.49 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_131/U1_5/CO (ROHM18FAD1P010)
+                                                          0.25       1.74 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_131/U1_6/CO (ROHM18FAD1P010)
+                                                          0.25       1.99 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_131/U1_7/CO (ROHM18FAD1P010)
+                                                          0.25       2.24 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_131/U1_8/CO (ROHM18FAD1P010)
+                                                          0.25       2.48 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_131/U1_9/CO (ROHM18FAD1P010)
+                                                          0.25       2.73 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_131/U1_10/CO (ROHM18FAD1P010)
+                                                          0.25       2.98 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_131/U1_11/CO (ROHM18FAD1P010)
+                                                          0.25       3.23 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_131/U1_12/CO (ROHM18FAD1P010)
+                                                          0.25       3.48 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_131/U1_13/CO (ROHM18FAD1P010)
+                                                          0.25       3.73 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_131/U1_14/CO (ROHM18FAD1P010)
+                                                          0.25       3.97 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_131/U1_15/CO (ROHM18FAD1P010)
+                                                          0.25       4.22 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_131/U1_16/CO (ROHM18FAD1P010)
+                                                          0.25       4.47 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_131/U1_17/CO (ROHM18FAD1P010)
+                                                          0.25       4.72 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_131/U1_18/CO (ROHM18FAD1P010)
+                                                          0.25       4.97 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_131/U1_19/CO (ROHM18FAD1P010)
+                                                          0.25       5.21 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_131/U1_20/CO (ROHM18FAD1P010)
+                                                          0.25       5.46 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_131/U1_21/CO (ROHM18FAD1P010)
+                                                          0.25       5.71 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_131/U1_22/CO (ROHM18FAD1P010)
+                                                          0.25       5.96 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_131/U1_23/CO (ROHM18FAD1P010)
+                                                          0.25       6.21 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_131/U1_24/CO (ROHM18FAD1P010)
+                                                          0.25       6.46 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_131/U1_25/CO (ROHM18FAD1P010)
+                                                          0.25       6.70 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_131/U1_26/CO (ROHM18FAD1P010)
+                                                          0.25       6.95 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_131/U1_27/CO (ROHM18FAD1P010)
+                                                          0.25       7.20 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_131/U1_28/CO (ROHM18FAD1P010)
+                                                          0.25       7.45 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_131/U1_29/CO (ROHM18FAD1P010)
+                                                          0.25       7.70 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_131/U1_30/CO (ROHM18FAD1P010)
+                                                          0.25       7.94 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_131/U1_31/SO (ROHM18FAD1P010)
+                                                          0.54       8.49 r
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_131/SUM[31] (sha256_core_standard_datapath_0_DW01_add_7)
+                                                          0.00       8.49 r
+  P2/DATAPATH/SHA256_CORE/DATAPATH/DIGEST_1[31] (sha256_core_standard_datapath_0)
+                                                          0.00       8.49 r
+  P2/DATAPATH/SHA256_CORE/DIGEST[223] (sha256_core_standard_0)
+                                                          0.00       8.49 r
+  P2/DATAPATH/OUT[223] (pbkdf2_2_dp)                      0.00       8.49 r
+  P2/OUT[223] (pbkdf2_2)                                  0.00       8.49 r
+  OUT_SCRYPT[223] (out)                                   0.00       8.49 r
+  data arrival time                                                  8.49
+
+  clock CLK (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  output external delay                                 -10.00      10.00
+  data required time                                                10.00
+  --------------------------------------------------------------------------
+  data required time                                                10.00
+  data arrival time                                                 -8.49
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.51
+
+
+  Startpoint: P2/DATAPATH/SHA256_CORE/DATAPATH/G_REG_REG_0_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: OUT_SCRYPT[63]
+            (output port clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  scrypt_new_proposed
+                     wl1                   ROHM18_FF
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  P2/DATAPATH/SHA256_CORE/DATAPATH/G_REG_REG_0_/C (ROHM18DFP010)
+                                                          0.00 #     0.00 r
+  P2/DATAPATH/SHA256_CORE/DATAPATH/G_REG_REG_0_/Q (ROHM18DFP010)
+                                                          0.34       0.34 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_136/B[0] (sha256_core_standard_datapath_0_DW01_add_2)
+                                                          0.00       0.34 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_136/U1/Y (ROHM18AND2P010)
+                                                          0.18       0.51 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_136/U1_1/CO (ROHM18FAD1P010)
+                                                          0.24       0.75 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_136/U1_2/CO (ROHM18FAD1P010)
+                                                          0.25       0.99 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_136/U1_3/CO (ROHM18FAD1P010)
+                                                          0.25       1.24 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_136/U1_4/CO (ROHM18FAD1P010)
+                                                          0.25       1.49 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_136/U1_5/CO (ROHM18FAD1P010)
+                                                          0.25       1.74 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_136/U1_6/CO (ROHM18FAD1P010)
+                                                          0.25       1.98 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_136/U1_7/CO (ROHM18FAD1P010)
+                                                          0.25       2.23 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_136/U1_8/CO (ROHM18FAD1P010)
+                                                          0.25       2.48 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_136/U1_9/CO (ROHM18FAD1P010)
+                                                          0.25       2.73 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_136/U1_10/CO (ROHM18FAD1P010)
+                                                          0.25       2.97 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_136/U1_11/CO (ROHM18FAD1P010)
+                                                          0.25       3.22 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_136/U1_12/CO (ROHM18FAD1P010)
+                                                          0.25       3.47 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_136/U1_13/CO (ROHM18FAD1P010)
+                                                          0.25       3.72 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_136/U1_14/CO (ROHM18FAD1P010)
+                                                          0.25       3.97 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_136/U1_15/CO (ROHM18FAD1P010)
+                                                          0.25       4.21 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_136/U1_16/CO (ROHM18FAD1P010)
+                                                          0.25       4.46 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_136/U1_17/CO (ROHM18FAD1P010)
+                                                          0.25       4.71 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_136/U1_18/CO (ROHM18FAD1P010)
+                                                          0.25       4.96 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_136/U1_19/CO (ROHM18FAD1P010)
+                                                          0.25       5.20 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_136/U1_20/CO (ROHM18FAD1P010)
+                                                          0.25       5.45 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_136/U1_21/CO (ROHM18FAD1P010)
+                                                          0.25       5.70 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_136/U1_22/CO (ROHM18FAD1P010)
+                                                          0.25       5.95 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_136/U1_23/CO (ROHM18FAD1P010)
+                                                          0.25       6.20 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_136/U1_24/CO (ROHM18FAD1P010)
+                                                          0.25       6.44 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_136/U1_25/CO (ROHM18FAD1P010)
+                                                          0.25       6.69 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_136/U1_26/CO (ROHM18FAD1P010)
+                                                          0.25       6.94 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_136/U1_27/CO (ROHM18FAD1P010)
+                                                          0.25       7.19 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_136/U1_28/CO (ROHM18FAD1P010)
+                                                          0.25       7.43 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_136/U1_29/CO (ROHM18FAD1P010)
+                                                          0.25       7.68 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_136/U1_30/CO (ROHM18FAD1P010)
+                                                          0.25       7.93 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_136/U1_31/SO (ROHM18FAD1P010)
+                                                          0.54       8.47 r
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_136/SUM[31] (sha256_core_standard_datapath_0_DW01_add_2)
+                                                          0.00       8.47 r
+  P2/DATAPATH/SHA256_CORE/DATAPATH/DIGEST_6[31] (sha256_core_standard_datapath_0)
+                                                          0.00       8.47 r
+  P2/DATAPATH/SHA256_CORE/DIGEST[63] (sha256_core_standard_0)
+                                                          0.00       8.47 r
+  P2/DATAPATH/OUT[63] (pbkdf2_2_dp)                       0.00       8.47 r
+  P2/OUT[63] (pbkdf2_2)                                   0.00       8.47 r
+  OUT_SCRYPT[63] (out)                                    0.00       8.47 r
+  data arrival time                                                  8.47
+
+  clock CLK (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  output external delay                                 -10.00      10.00
+  data required time                                                10.00
+  --------------------------------------------------------------------------
+  data required time                                                10.00
+  data arrival time                                                 -8.47
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.53
+
+
+  Startpoint: P2/DATAPATH/SHA256_CORE/DATAPATH/E_REG_REG_0_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: OUT_SCRYPT[126]
+            (output port clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  scrypt_new_proposed
+                     wl1                   ROHM18_FF
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  P2/DATAPATH/SHA256_CORE/DATAPATH/E_REG_REG_0_/C (ROHM18DFP010)
+                                                          0.00 #     0.00 r
+  P2/DATAPATH/SHA256_CORE/DATAPATH/E_REG_REG_0_/Q (ROHM18DFP010)
+                                                          0.46       0.46 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_134/B[0] (sha256_core_standard_datapath_0_DW01_add_4)
+                                                          0.00       0.46 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_134/U1/Y (ROHM18AND2P010)
+                                                          0.22       0.67 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_134/U1_1/CO (ROHM18FAD1P010)
+                                                          0.24       0.91 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_134/U1_2/CO (ROHM18FAD1P010)
+                                                          0.25       1.16 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_134/U1_3/CO (ROHM18FAD1P010)
+                                                          0.25       1.41 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_134/U1_4/CO (ROHM18FAD1P010)
+                                                          0.25       1.66 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_134/U1_5/CO (ROHM18FAD1P010)
+                                                          0.25       1.91 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_134/U1_6/CO (ROHM18FAD1P010)
+                                                          0.25       2.16 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_134/U1_7/CO (ROHM18FAD1P010)
+                                                          0.25       2.40 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_134/U1_8/CO (ROHM18FAD1P010)
+                                                          0.25       2.65 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_134/U1_9/CO (ROHM18FAD1P010)
+                                                          0.25       2.90 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_134/U1_10/CO (ROHM18FAD1P010)
+                                                          0.25       3.15 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_134/U1_11/CO (ROHM18FAD1P010)
+                                                          0.25       3.40 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_134/U1_12/CO (ROHM18FAD1P010)
+                                                          0.25       3.65 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_134/U1_13/CO (ROHM18FAD1P010)
+                                                          0.25       3.90 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_134/U1_14/CO (ROHM18FAD1P010)
+                                                          0.25       4.15 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_134/U1_15/CO (ROHM18FAD1P010)
+                                                          0.25       4.40 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_134/U1_16/CO (ROHM18FAD1P010)
+                                                          0.25       4.65 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_134/U1_17/CO (ROHM18FAD1P010)
+                                                          0.25       4.90 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_134/U1_18/CO (ROHM18FAD1P010)
+                                                          0.25       5.15 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_134/U1_19/CO (ROHM18FAD1P010)
+                                                          0.25       5.40 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_134/U1_20/CO (ROHM18FAD1P010)
+                                                          0.25       5.65 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_134/U1_21/CO (ROHM18FAD1P010)
+                                                          0.25       5.90 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_134/U1_22/CO (ROHM18FAD1P010)
+                                                          0.25       6.15 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_134/U1_23/CO (ROHM18FAD1P010)
+                                                          0.25       6.40 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_134/U1_24/CO (ROHM18FAD1P010)
+                                                          0.25       6.64 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_134/U1_25/CO (ROHM18FAD1P010)
+                                                          0.25       6.89 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_134/U1_26/CO (ROHM18FAD1P010)
+                                                          0.25       7.14 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_134/U1_27/CO (ROHM18FAD1P010)
+                                                          0.25       7.39 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_134/U1_28/CO (ROHM18FAD1P010)
+                                                          0.25       7.64 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_134/U1_29/CO (ROHM18FAD1P010)
+                                                          0.25       7.89 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_134/U1_30/SO (ROHM18FAD1P010)
+                                                          0.54       8.44 r
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_134/SUM[30] (sha256_core_standard_datapath_0_DW01_add_4)
+                                                          0.00       8.44 r
+  P2/DATAPATH/SHA256_CORE/DATAPATH/DIGEST_4[30] (sha256_core_standard_datapath_0)
+                                                          0.00       8.44 r
+  P2/DATAPATH/SHA256_CORE/DIGEST[126] (sha256_core_standard_0)
+                                                          0.00       8.44 r
+  P2/DATAPATH/OUT[126] (pbkdf2_2_dp)                      0.00       8.44 r
+  P2/OUT[126] (pbkdf2_2)                                  0.00       8.44 r
+  OUT_SCRYPT[126] (out)                                   0.00       8.44 r
+  data arrival time                                                  8.44
+
+  clock CLK (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  output external delay                                 -10.00      10.00
+  data required time                                                10.00
+  --------------------------------------------------------------------------
+  data required time                                                10.00
+  data arrival time                                                 -8.44
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.56
+
+
+  Startpoint: P2/DATAPATH/SHA256_CORE/DATAPATH/A_REG_REG_1_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: OUT_SCRYPT[254]
+            (output port clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  scrypt_new_proposed
+                     wl1                   ROHM18_FF
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  P2/DATAPATH/SHA256_CORE/DATAPATH/A_REG_REG_1_/C (ROHM18DFP010)
+                                                          0.00 #     0.00 r
+  P2/DATAPATH/SHA256_CORE/DATAPATH/A_REG_REG_1_/Q (ROHM18DFP010)
+                                                          0.43       0.43 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_130/B[1] (sha256_core_standard_datapath_0_DW01_add_8)
+                                                          0.00       0.43 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_130/U1_1/CO (ROHM18FAD1P010)
+                                                          0.36       0.79 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_130/U1_2/CO (ROHM18FAD1P010)
+                                                          0.25       1.04 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_130/U1_3/CO (ROHM18FAD1P010)
+                                                          0.25       1.29 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_130/U1_4/CO (ROHM18FAD1P010)
+                                                          0.25       1.54 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_130/U1_5/CO (ROHM18FAD1P010)
+                                                          0.25       1.79 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_130/U1_6/CO (ROHM18FAD1P010)
+                                                          0.25       2.04 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_130/U1_7/CO (ROHM18FAD1P010)
+                                                          0.25       2.29 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_130/U1_8/CO (ROHM18FAD1P010)
+                                                          0.25       2.53 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_130/U1_9/CO (ROHM18FAD1P010)
+                                                          0.25       2.78 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_130/U1_10/CO (ROHM18FAD1P010)
+                                                          0.25       3.03 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_130/U1_11/CO (ROHM18FAD1P010)
+                                                          0.25       3.28 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_130/U1_12/CO (ROHM18FAD1P010)
+                                                          0.25       3.53 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_130/U1_13/CO (ROHM18FAD1P010)
+                                                          0.25       3.78 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_130/U1_14/CO (ROHM18FAD1P010)
+                                                          0.25       4.03 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_130/U1_15/CO (ROHM18FAD1P010)
+                                                          0.25       4.28 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_130/U1_16/CO (ROHM18FAD1P010)
+                                                          0.25       4.53 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_130/U1_17/CO (ROHM18FAD1P010)
+                                                          0.25       4.78 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_130/U1_18/CO (ROHM18FAD1P010)
+                                                          0.25       5.03 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_130/U1_19/CO (ROHM18FAD1P010)
+                                                          0.25       5.28 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_130/U1_20/CO (ROHM18FAD1P010)
+                                                          0.25       5.53 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_130/U1_21/CO (ROHM18FAD1P010)
+                                                          0.25       5.78 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_130/U1_22/CO (ROHM18FAD1P010)
+                                                          0.25       6.03 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_130/U1_23/CO (ROHM18FAD1P010)
+                                                          0.25       6.28 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_130/U1_24/CO (ROHM18FAD1P010)
+                                                          0.25       6.53 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_130/U1_25/CO (ROHM18FAD1P010)
+                                                          0.25       6.78 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_130/U1_26/CO (ROHM18FAD1P010)
+                                                          0.25       7.03 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_130/U1_27/CO (ROHM18FAD1P010)
+                                                          0.25       7.28 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_130/U1_28/CO (ROHM18FAD1P010)
+                                                          0.25       7.53 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_130/U1_29/CO (ROHM18FAD1P010)
+                                                          0.25       7.78 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_130/U1_30/SO (ROHM18FAD1P010)
+                                                          0.54       8.32 r
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_130/SUM[30] (sha256_core_standard_datapath_0_DW01_add_8)
+                                                          0.00       8.32 r
+  P2/DATAPATH/SHA256_CORE/DATAPATH/DIGEST_0[30] (sha256_core_standard_datapath_0)
+                                                          0.00       8.32 r
+  P2/DATAPATH/SHA256_CORE/DIGEST[254] (sha256_core_standard_0)
+                                                          0.00       8.32 r
+  P2/DATAPATH/OUT[254] (pbkdf2_2_dp)                      0.00       8.32 r
+  P2/OUT[254] (pbkdf2_2)                                  0.00       8.32 r
+  OUT_SCRYPT[254] (out)                                   0.00       8.32 r
+  data arrival time                                                  8.32
+
+  clock CLK (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  output external delay                                 -10.00      10.00
+  data required time                                                10.00
+  --------------------------------------------------------------------------
+  data required time                                                10.00
+  data arrival time                                                 -8.32
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.68
+
+
+  Startpoint: P2/DATAPATH/SHA256_CORE/DATAPATH/C_REG_REG_0_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: OUT_SCRYPT[190]
+            (output port clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  scrypt_new_proposed
+                     wl1                   ROHM18_FF
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  P2/DATAPATH/SHA256_CORE/DATAPATH/C_REG_REG_0_/C (ROHM18DFP010)
+                                                          0.00 #     0.00 r
+  P2/DATAPATH/SHA256_CORE/DATAPATH/C_REG_REG_0_/Q (ROHM18DFP010)
+                                                          0.37       0.37 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_132/B[0] (sha256_core_standard_datapath_0_DW01_add_6)
+                                                          0.00       0.37 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_132/U1/Y (ROHM18AND2P010)
+                                                          0.19       0.56 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_132/U1_1/CO (ROHM18FAD1P010)
+                                                          0.24       0.80 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_132/U1_2/CO (ROHM18FAD1P010)
+                                                          0.25       1.05 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_132/U1_3/CO (ROHM18FAD1P010)
+                                                          0.25       1.30 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_132/U1_4/CO (ROHM18FAD1P010)
+                                                          0.25       1.54 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_132/U1_5/CO (ROHM18FAD1P010)
+                                                          0.25       1.79 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_132/U1_6/CO (ROHM18FAD1P010)
+                                                          0.25       2.04 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_132/U1_7/CO (ROHM18FAD1P010)
+                                                          0.25       2.29 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_132/U1_8/CO (ROHM18FAD1P010)
+                                                          0.25       2.54 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_132/U1_9/CO (ROHM18FAD1P010)
+                                                          0.25       2.78 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_132/U1_10/CO (ROHM18FAD1P010)
+                                                          0.25       3.03 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_132/U1_11/CO (ROHM18FAD1P010)
+                                                          0.25       3.28 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_132/U1_12/CO (ROHM18FAD1P010)
+                                                          0.25       3.53 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_132/U1_13/CO (ROHM18FAD1P010)
+                                                          0.25       3.78 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_132/U1_14/CO (ROHM18FAD1P010)
+                                                          0.25       4.02 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_132/U1_15/CO (ROHM18FAD1P010)
+                                                          0.25       4.27 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_132/U1_16/CO (ROHM18FAD1P010)
+                                                          0.25       4.52 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_132/U1_17/CO (ROHM18FAD1P010)
+                                                          0.25       4.77 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_132/U1_18/CO (ROHM18FAD1P010)
+                                                          0.25       5.02 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_132/U1_19/CO (ROHM18FAD1P010)
+                                                          0.25       5.27 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_132/U1_20/CO (ROHM18FAD1P010)
+                                                          0.25       5.51 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_132/U1_21/CO (ROHM18FAD1P010)
+                                                          0.25       5.76 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_132/U1_22/CO (ROHM18FAD1P010)
+                                                          0.25       6.01 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_132/U1_23/CO (ROHM18FAD1P010)
+                                                          0.25       6.26 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_132/U1_24/CO (ROHM18FAD1P010)
+                                                          0.25       6.51 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_132/U1_25/CO (ROHM18FAD1P010)
+                                                          0.25       6.75 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_132/U1_26/CO (ROHM18FAD1P010)
+                                                          0.25       7.00 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_132/U1_27/CO (ROHM18FAD1P010)
+                                                          0.25       7.25 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_132/U1_28/CO (ROHM18FAD1P010)
+                                                          0.25       7.50 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_132/U1_29/CO (ROHM18FAD1P010)
+                                                          0.25       7.74 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_132/U1_30/SO (ROHM18FAD1P010)
+                                                          0.54       8.29 r
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_132/SUM[30] (sha256_core_standard_datapath_0_DW01_add_6)
+                                                          0.00       8.29 r
+  P2/DATAPATH/SHA256_CORE/DATAPATH/DIGEST_2[30] (sha256_core_standard_datapath_0)
+                                                          0.00       8.29 r
+  P2/DATAPATH/SHA256_CORE/DIGEST[190] (sha256_core_standard_0)
+                                                          0.00       8.29 r
+  P2/DATAPATH/OUT[190] (pbkdf2_2_dp)                      0.00       8.29 r
+  P2/OUT[190] (pbkdf2_2)                                  0.00       8.29 r
+  OUT_SCRYPT[190] (out)                                   0.00       8.29 r
+  data arrival time                                                  8.29
+
+  clock CLK (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  output external delay                                 -10.00      10.00
+  data required time                                                10.00
+  --------------------------------------------------------------------------
+  data required time                                                10.00
+  data arrival time                                                 -8.29
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.71
+
+
+  Startpoint: P2/DATAPATH/SHA256_CORE/DATAPATH/H_REG_REG_0_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: OUT_SCRYPT[30]
+            (output port clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  scrypt_new_proposed
+                     wl1                   ROHM18_FF
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  P2/DATAPATH/SHA256_CORE/DATAPATH/H_REG_REG_0_/C (ROHM18DFP010)
+                                                          0.00 #     0.00 r
+  P2/DATAPATH/SHA256_CORE/DATAPATH/H_REG_REG_0_/Q (ROHM18DFP010)
+                                                          0.38       0.38 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_137/B[0] (sha256_core_standard_datapath_0_DW01_add_1)
+                                                          0.00       0.38 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_137/U1/Y (ROHM18AND2P010)
+                                                          0.19       0.57 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_137/U1_1/CO (ROHM18FAD1P010)
+                                                          0.24       0.80 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_137/U1_2/CO (ROHM18FAD1P010)
+                                                          0.25       1.05 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_137/U1_3/CO (ROHM18FAD1P010)
+                                                          0.25       1.30 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_137/U1_4/CO (ROHM18FAD1P010)
+                                                          0.25       1.55 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_137/U1_5/CO (ROHM18FAD1P010)
+                                                          0.25       1.79 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_137/U1_6/CO (ROHM18FAD1P010)
+                                                          0.25       2.04 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_137/U1_7/CO (ROHM18FAD1P010)
+                                                          0.25       2.29 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_137/U1_8/CO (ROHM18FAD1P010)
+                                                          0.25       2.54 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_137/U1_9/CO (ROHM18FAD1P010)
+                                                          0.25       2.78 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_137/U1_10/CO (ROHM18FAD1P010)
+                                                          0.25       3.03 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_137/U1_11/CO (ROHM18FAD1P010)
+                                                          0.25       3.28 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_137/U1_12/CO (ROHM18FAD1P010)
+                                                          0.25       3.53 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_137/U1_13/CO (ROHM18FAD1P010)
+                                                          0.25       3.77 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_137/U1_14/CO (ROHM18FAD1P010)
+                                                          0.25       4.02 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_137/U1_15/CO (ROHM18FAD1P010)
+                                                          0.25       4.27 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_137/U1_16/CO (ROHM18FAD1P010)
+                                                          0.25       4.52 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_137/U1_17/CO (ROHM18FAD1P010)
+                                                          0.25       4.77 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_137/U1_18/CO (ROHM18FAD1P010)
+                                                          0.25       5.01 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_137/U1_19/CO (ROHM18FAD1P010)
+                                                          0.25       5.26 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_137/U1_20/CO (ROHM18FAD1P010)
+                                                          0.25       5.51 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_137/U1_21/CO (ROHM18FAD1P010)
+                                                          0.25       5.76 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_137/U1_22/CO (ROHM18FAD1P010)
+                                                          0.25       6.00 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_137/U1_23/CO (ROHM18FAD1P010)
+                                                          0.25       6.25 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_137/U1_24/CO (ROHM18FAD1P010)
+                                                          0.25       6.50 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_137/U1_25/CO (ROHM18FAD1P010)
+                                                          0.25       6.75 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_137/U1_26/CO (ROHM18FAD1P010)
+                                                          0.25       7.00 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_137/U1_27/CO (ROHM18FAD1P010)
+                                                          0.25       7.24 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_137/U1_28/CO (ROHM18FAD1P010)
+                                                          0.25       7.49 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_137/U1_29/CO (ROHM18FAD1P010)
+                                                          0.25       7.74 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_137/U1_30/SO (ROHM18FAD1P010)
+                                                          0.54       8.28 r
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_137/SUM[30] (sha256_core_standard_datapath_0_DW01_add_1)
+                                                          0.00       8.28 r
+  P2/DATAPATH/SHA256_CORE/DATAPATH/DIGEST_7[30] (sha256_core_standard_datapath_0)
+                                                          0.00       8.28 r
+  P2/DATAPATH/SHA256_CORE/DIGEST[30] (sha256_core_standard_0)
+                                                          0.00       8.28 r
+  P2/DATAPATH/OUT[30] (pbkdf2_2_dp)                       0.00       8.28 r
+  P2/OUT[30] (pbkdf2_2)                                   0.00       8.28 r
+  OUT_SCRYPT[30] (out)                                    0.00       8.28 r
+  data arrival time                                                  8.28
+
+  clock CLK (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  output external delay                                 -10.00      10.00
+  data required time                                                10.00
+  --------------------------------------------------------------------------
+  data required time                                                10.00
+  data arrival time                                                 -8.28
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.72
+
+
+  Startpoint: P2/DATAPATH/SHA256_CORE/DATAPATH/D_REG_REG_0_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: OUT_SCRYPT[158]
+            (output port clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  scrypt_new_proposed
+                     wl1                   ROHM18_FF
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  P2/DATAPATH/SHA256_CORE/DATAPATH/D_REG_REG_0_/C (ROHM18DFP010)
+                                                          0.00 #     0.00 r
+  P2/DATAPATH/SHA256_CORE/DATAPATH/D_REG_REG_0_/Q (ROHM18DFP010)
+                                                          0.38       0.38 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_133/B[0] (sha256_core_standard_datapath_0_DW01_add_5)
+                                                          0.00       0.38 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_133/U1/Y (ROHM18AND2P010)
+                                                          0.19       0.57 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_133/U1_1/CO (ROHM18FAD1P010)
+                                                          0.24       0.80 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_133/U1_2/CO (ROHM18FAD1P010)
+                                                          0.25       1.05 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_133/U1_3/CO (ROHM18FAD1P010)
+                                                          0.25       1.30 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_133/U1_4/CO (ROHM18FAD1P010)
+                                                          0.25       1.54 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_133/U1_5/CO (ROHM18FAD1P010)
+                                                          0.25       1.79 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_133/U1_6/CO (ROHM18FAD1P010)
+                                                          0.25       2.04 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_133/U1_7/CO (ROHM18FAD1P010)
+                                                          0.25       2.29 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_133/U1_8/CO (ROHM18FAD1P010)
+                                                          0.25       2.54 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_133/U1_9/CO (ROHM18FAD1P010)
+                                                          0.25       2.78 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_133/U1_10/CO (ROHM18FAD1P010)
+                                                          0.25       3.03 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_133/U1_11/CO (ROHM18FAD1P010)
+                                                          0.25       3.28 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_133/U1_12/CO (ROHM18FAD1P010)
+                                                          0.25       3.53 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_133/U1_13/CO (ROHM18FAD1P010)
+                                                          0.25       3.77 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_133/U1_14/CO (ROHM18FAD1P010)
+                                                          0.25       4.02 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_133/U1_15/CO (ROHM18FAD1P010)
+                                                          0.25       4.27 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_133/U1_16/CO (ROHM18FAD1P010)
+                                                          0.25       4.52 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_133/U1_17/CO (ROHM18FAD1P010)
+                                                          0.25       4.77 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_133/U1_18/CO (ROHM18FAD1P010)
+                                                          0.25       5.01 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_133/U1_19/CO (ROHM18FAD1P010)
+                                                          0.25       5.26 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_133/U1_20/CO (ROHM18FAD1P010)
+                                                          0.25       5.51 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_133/U1_21/CO (ROHM18FAD1P010)
+                                                          0.25       5.76 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_133/U1_22/CO (ROHM18FAD1P010)
+                                                          0.25       6.00 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_133/U1_23/CO (ROHM18FAD1P010)
+                                                          0.25       6.25 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_133/U1_24/CO (ROHM18FAD1P010)
+                                                          0.25       6.50 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_133/U1_25/CO (ROHM18FAD1P010)
+                                                          0.25       6.75 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_133/U1_26/CO (ROHM18FAD1P010)
+                                                          0.25       7.00 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_133/U1_27/CO (ROHM18FAD1P010)
+                                                          0.25       7.24 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_133/U1_28/CO (ROHM18FAD1P010)
+                                                          0.25       7.49 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_133/U1_29/CO (ROHM18FAD1P010)
+                                                          0.25       7.74 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_133/U1_30/SO (ROHM18FAD1P010)
+                                                          0.54       8.28 r
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_133/SUM[30] (sha256_core_standard_datapath_0_DW01_add_5)
+                                                          0.00       8.28 r
+  P2/DATAPATH/SHA256_CORE/DATAPATH/DIGEST_3[30] (sha256_core_standard_datapath_0)
+                                                          0.00       8.28 r
+  P2/DATAPATH/SHA256_CORE/DIGEST[158] (sha256_core_standard_0)
+                                                          0.00       8.28 r
+  P2/DATAPATH/OUT[158] (pbkdf2_2_dp)                      0.00       8.28 r
+  P2/OUT[158] (pbkdf2_2)                                  0.00       8.28 r
+  OUT_SCRYPT[158] (out)                                   0.00       8.28 r
+  data arrival time                                                  8.28
+
+  clock CLK (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  output external delay                                 -10.00      10.00
+  data required time                                                10.00
+  --------------------------------------------------------------------------
+  data required time                                                10.00
+  data arrival time                                                 -8.28
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.72
+
+
+  Startpoint: P2/DATAPATH/SHA256_CORE/DATAPATH/F_REG_REG_0_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: OUT_SCRYPT[94]
+            (output port clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  scrypt_new_proposed
+                     wl1                   ROHM18_FF
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  P2/DATAPATH/SHA256_CORE/DATAPATH/F_REG_REG_0_/C (ROHM18DFP010)
+                                                          0.00 #     0.00 r
+  P2/DATAPATH/SHA256_CORE/DATAPATH/F_REG_REG_0_/Q (ROHM18DFP010)
+                                                          0.37       0.37 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_135/B[0] (sha256_core_standard_datapath_0_DW01_add_3)
+                                                          0.00       0.37 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_135/U1/Y (ROHM18AND2P010)
+                                                          0.19       0.56 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_135/U1_1/CO (ROHM18FAD1P010)
+                                                          0.24       0.80 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_135/U1_2/CO (ROHM18FAD1P010)
+                                                          0.25       1.05 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_135/U1_3/CO (ROHM18FAD1P010)
+                                                          0.25       1.29 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_135/U1_4/CO (ROHM18FAD1P010)
+                                                          0.25       1.54 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_135/U1_5/CO (ROHM18FAD1P010)
+                                                          0.25       1.79 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_135/U1_6/CO (ROHM18FAD1P010)
+                                                          0.25       2.04 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_135/U1_7/CO (ROHM18FAD1P010)
+                                                          0.25       2.29 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_135/U1_8/CO (ROHM18FAD1P010)
+                                                          0.25       2.53 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_135/U1_9/CO (ROHM18FAD1P010)
+                                                          0.25       2.78 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_135/U1_10/CO (ROHM18FAD1P010)
+                                                          0.25       3.03 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_135/U1_11/CO (ROHM18FAD1P010)
+                                                          0.25       3.28 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_135/U1_12/CO (ROHM18FAD1P010)
+                                                          0.25       3.52 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_135/U1_13/CO (ROHM18FAD1P010)
+                                                          0.25       3.77 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_135/U1_14/CO (ROHM18FAD1P010)
+                                                          0.25       4.02 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_135/U1_15/CO (ROHM18FAD1P010)
+                                                          0.25       4.27 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_135/U1_16/CO (ROHM18FAD1P010)
+                                                          0.25       4.52 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_135/U1_17/CO (ROHM18FAD1P010)
+                                                          0.25       4.76 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_135/U1_18/CO (ROHM18FAD1P010)
+                                                          0.25       5.01 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_135/U1_19/CO (ROHM18FAD1P010)
+                                                          0.25       5.26 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_135/U1_20/CO (ROHM18FAD1P010)
+                                                          0.25       5.51 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_135/U1_21/CO (ROHM18FAD1P010)
+                                                          0.25       5.75 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_135/U1_22/CO (ROHM18FAD1P010)
+                                                          0.25       6.00 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_135/U1_23/CO (ROHM18FAD1P010)
+                                                          0.25       6.25 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_135/U1_24/CO (ROHM18FAD1P010)
+                                                          0.25       6.50 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_135/U1_25/CO (ROHM18FAD1P010)
+                                                          0.25       6.75 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_135/U1_26/CO (ROHM18FAD1P010)
+                                                          0.25       6.99 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_135/U1_27/CO (ROHM18FAD1P010)
+                                                          0.25       7.24 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_135/U1_28/CO (ROHM18FAD1P010)
+                                                          0.25       7.49 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_135/U1_29/CO (ROHM18FAD1P010)
+                                                          0.25       7.74 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_135/U1_30/SO (ROHM18FAD1P010)
+                                                          0.54       8.28 r
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_135/SUM[30] (sha256_core_standard_datapath_0_DW01_add_3)
+                                                          0.00       8.28 r
+  P2/DATAPATH/SHA256_CORE/DATAPATH/DIGEST_5[30] (sha256_core_standard_datapath_0)
+                                                          0.00       8.28 r
+  P2/DATAPATH/SHA256_CORE/DIGEST[94] (sha256_core_standard_0)
+                                                          0.00       8.28 r
+  P2/DATAPATH/OUT[94] (pbkdf2_2_dp)                       0.00       8.28 r
+  P2/OUT[94] (pbkdf2_2)                                   0.00       8.28 r
+  OUT_SCRYPT[94] (out)                                    0.00       8.28 r
+  data arrival time                                                  8.28
+
+  clock CLK (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  output external delay                                 -10.00      10.00
+  data required time                                                10.00
+  --------------------------------------------------------------------------
+  data required time                                                10.00
+  data arrival time                                                 -8.28
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.72
+
+
+  Startpoint: P2/DATAPATH/SHA256_CORE/DATAPATH/B_REG_REG_0_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: OUT_SCRYPT[222]
+            (output port clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  scrypt_new_proposed
+                     wl1                   ROHM18_FF
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  P2/DATAPATH/SHA256_CORE/DATAPATH/B_REG_REG_0_/C (ROHM18DFP010)
+                                                          0.00 #     0.00 r
+  P2/DATAPATH/SHA256_CORE/DATAPATH/B_REG_REG_0_/Q (ROHM18DFP010)
+                                                          0.34       0.34 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_131/B[0] (sha256_core_standard_datapath_0_DW01_add_7)
+                                                          0.00       0.34 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_131/U1/Y (ROHM18AND2P010)
+                                                          0.18       0.51 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_131/U1_1/CO (ROHM18FAD1P010)
+                                                          0.24       0.75 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_131/U1_2/CO (ROHM18FAD1P010)
+                                                          0.25       1.00 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_131/U1_3/CO (ROHM18FAD1P010)
+                                                          0.25       1.24 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_131/U1_4/CO (ROHM18FAD1P010)
+                                                          0.25       1.49 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_131/U1_5/CO (ROHM18FAD1P010)
+                                                          0.25       1.74 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_131/U1_6/CO (ROHM18FAD1P010)
+                                                          0.25       1.99 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_131/U1_7/CO (ROHM18FAD1P010)
+                                                          0.25       2.24 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_131/U1_8/CO (ROHM18FAD1P010)
+                                                          0.25       2.48 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_131/U1_9/CO (ROHM18FAD1P010)
+                                                          0.25       2.73 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_131/U1_10/CO (ROHM18FAD1P010)
+                                                          0.25       2.98 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_131/U1_11/CO (ROHM18FAD1P010)
+                                                          0.25       3.23 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_131/U1_12/CO (ROHM18FAD1P010)
+                                                          0.25       3.48 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_131/U1_13/CO (ROHM18FAD1P010)
+                                                          0.25       3.73 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_131/U1_14/CO (ROHM18FAD1P010)
+                                                          0.25       3.97 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_131/U1_15/CO (ROHM18FAD1P010)
+                                                          0.25       4.22 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_131/U1_16/CO (ROHM18FAD1P010)
+                                                          0.25       4.47 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_131/U1_17/CO (ROHM18FAD1P010)
+                                                          0.25       4.72 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_131/U1_18/CO (ROHM18FAD1P010)
+                                                          0.25       4.97 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_131/U1_19/CO (ROHM18FAD1P010)
+                                                          0.25       5.21 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_131/U1_20/CO (ROHM18FAD1P010)
+                                                          0.25       5.46 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_131/U1_21/CO (ROHM18FAD1P010)
+                                                          0.25       5.71 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_131/U1_22/CO (ROHM18FAD1P010)
+                                                          0.25       5.96 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_131/U1_23/CO (ROHM18FAD1P010)
+                                                          0.25       6.21 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_131/U1_24/CO (ROHM18FAD1P010)
+                                                          0.25       6.46 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_131/U1_25/CO (ROHM18FAD1P010)
+                                                          0.25       6.70 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_131/U1_26/CO (ROHM18FAD1P010)
+                                                          0.25       6.95 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_131/U1_27/CO (ROHM18FAD1P010)
+                                                          0.25       7.20 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_131/U1_28/CO (ROHM18FAD1P010)
+                                                          0.25       7.45 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_131/U1_29/CO (ROHM18FAD1P010)
+                                                          0.25       7.70 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_131/U1_30/SO (ROHM18FAD1P010)
+                                                          0.54       8.24 r
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_131/SUM[30] (sha256_core_standard_datapath_0_DW01_add_7)
+                                                          0.00       8.24 r
+  P2/DATAPATH/SHA256_CORE/DATAPATH/DIGEST_1[30] (sha256_core_standard_datapath_0)
+                                                          0.00       8.24 r
+  P2/DATAPATH/SHA256_CORE/DIGEST[222] (sha256_core_standard_0)
+                                                          0.00       8.24 r
+  P2/DATAPATH/OUT[222] (pbkdf2_2_dp)                      0.00       8.24 r
+  P2/OUT[222] (pbkdf2_2)                                  0.00       8.24 r
+  OUT_SCRYPT[222] (out)                                   0.00       8.24 r
+  data arrival time                                                  8.24
+
+  clock CLK (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  output external delay                                 -10.00      10.00
+  data required time                                                10.00
+  --------------------------------------------------------------------------
+  data required time                                                10.00
+  data arrival time                                                 -8.24
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.76
+
+
+  Startpoint: P2/DATAPATH/SHA256_CORE/DATAPATH/G_REG_REG_0_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: OUT_SCRYPT[62]
+            (output port clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  scrypt_new_proposed
+                     wl1                   ROHM18_FF
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  P2/DATAPATH/SHA256_CORE/DATAPATH/G_REG_REG_0_/C (ROHM18DFP010)
+                                                          0.00 #     0.00 r
+  P2/DATAPATH/SHA256_CORE/DATAPATH/G_REG_REG_0_/Q (ROHM18DFP010)
+                                                          0.34       0.34 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_136/B[0] (sha256_core_standard_datapath_0_DW01_add_2)
+                                                          0.00       0.34 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_136/U1/Y (ROHM18AND2P010)
+                                                          0.18       0.51 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_136/U1_1/CO (ROHM18FAD1P010)
+                                                          0.24       0.75 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_136/U1_2/CO (ROHM18FAD1P010)
+                                                          0.25       0.99 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_136/U1_3/CO (ROHM18FAD1P010)
+                                                          0.25       1.24 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_136/U1_4/CO (ROHM18FAD1P010)
+                                                          0.25       1.49 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_136/U1_5/CO (ROHM18FAD1P010)
+                                                          0.25       1.74 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_136/U1_6/CO (ROHM18FAD1P010)
+                                                          0.25       1.98 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_136/U1_7/CO (ROHM18FAD1P010)
+                                                          0.25       2.23 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_136/U1_8/CO (ROHM18FAD1P010)
+                                                          0.25       2.48 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_136/U1_9/CO (ROHM18FAD1P010)
+                                                          0.25       2.73 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_136/U1_10/CO (ROHM18FAD1P010)
+                                                          0.25       2.97 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_136/U1_11/CO (ROHM18FAD1P010)
+                                                          0.25       3.22 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_136/U1_12/CO (ROHM18FAD1P010)
+                                                          0.25       3.47 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_136/U1_13/CO (ROHM18FAD1P010)
+                                                          0.25       3.72 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_136/U1_14/CO (ROHM18FAD1P010)
+                                                          0.25       3.97 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_136/U1_15/CO (ROHM18FAD1P010)
+                                                          0.25       4.21 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_136/U1_16/CO (ROHM18FAD1P010)
+                                                          0.25       4.46 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_136/U1_17/CO (ROHM18FAD1P010)
+                                                          0.25       4.71 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_136/U1_18/CO (ROHM18FAD1P010)
+                                                          0.25       4.96 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_136/U1_19/CO (ROHM18FAD1P010)
+                                                          0.25       5.20 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_136/U1_20/CO (ROHM18FAD1P010)
+                                                          0.25       5.45 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_136/U1_21/CO (ROHM18FAD1P010)
+                                                          0.25       5.70 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_136/U1_22/CO (ROHM18FAD1P010)
+                                                          0.25       5.95 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_136/U1_23/CO (ROHM18FAD1P010)
+                                                          0.25       6.20 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_136/U1_24/CO (ROHM18FAD1P010)
+                                                          0.25       6.44 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_136/U1_25/CO (ROHM18FAD1P010)
+                                                          0.25       6.69 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_136/U1_26/CO (ROHM18FAD1P010)
+                                                          0.25       6.94 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_136/U1_27/CO (ROHM18FAD1P010)
+                                                          0.25       7.19 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_136/U1_28/CO (ROHM18FAD1P010)
+                                                          0.25       7.43 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_136/U1_29/CO (ROHM18FAD1P010)
+                                                          0.25       7.68 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_136/U1_30/SO (ROHM18FAD1P010)
+                                                          0.54       8.22 r
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_136/SUM[30] (sha256_core_standard_datapath_0_DW01_add_2)
+                                                          0.00       8.22 r
+  P2/DATAPATH/SHA256_CORE/DATAPATH/DIGEST_6[30] (sha256_core_standard_datapath_0)
+                                                          0.00       8.22 r
+  P2/DATAPATH/SHA256_CORE/DIGEST[62] (sha256_core_standard_0)
+                                                          0.00       8.22 r
+  P2/DATAPATH/OUT[62] (pbkdf2_2_dp)                       0.00       8.22 r
+  P2/OUT[62] (pbkdf2_2)                                   0.00       8.22 r
+  OUT_SCRYPT[62] (out)                                    0.00       8.22 r
+  data arrival time                                                  8.22
+
+  clock CLK (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  output external delay                                 -10.00      10.00
+  data required time                                                10.00
+  --------------------------------------------------------------------------
+  data required time                                                10.00
+  data arrival time                                                 -8.22
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.78
+
+
+  Startpoint: P2/DATAPATH/SHA256_CORE/DATAPATH/E_REG_REG_0_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: OUT_SCRYPT[125]
+            (output port clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  scrypt_new_proposed
+                     wl1                   ROHM18_FF
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  P2/DATAPATH/SHA256_CORE/DATAPATH/E_REG_REG_0_/C (ROHM18DFP010)
+                                                          0.00 #     0.00 r
+  P2/DATAPATH/SHA256_CORE/DATAPATH/E_REG_REG_0_/Q (ROHM18DFP010)
+                                                          0.46       0.46 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_134/B[0] (sha256_core_standard_datapath_0_DW01_add_4)
+                                                          0.00       0.46 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_134/U1/Y (ROHM18AND2P010)
+                                                          0.22       0.67 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_134/U1_1/CO (ROHM18FAD1P010)
+                                                          0.24       0.91 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_134/U1_2/CO (ROHM18FAD1P010)
+                                                          0.25       1.16 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_134/U1_3/CO (ROHM18FAD1P010)
+                                                          0.25       1.41 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_134/U1_4/CO (ROHM18FAD1P010)
+                                                          0.25       1.66 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_134/U1_5/CO (ROHM18FAD1P010)
+                                                          0.25       1.91 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_134/U1_6/CO (ROHM18FAD1P010)
+                                                          0.25       2.16 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_134/U1_7/CO (ROHM18FAD1P010)
+                                                          0.25       2.40 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_134/U1_8/CO (ROHM18FAD1P010)
+                                                          0.25       2.65 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_134/U1_9/CO (ROHM18FAD1P010)
+                                                          0.25       2.90 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_134/U1_10/CO (ROHM18FAD1P010)
+                                                          0.25       3.15 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_134/U1_11/CO (ROHM18FAD1P010)
+                                                          0.25       3.40 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_134/U1_12/CO (ROHM18FAD1P010)
+                                                          0.25       3.65 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_134/U1_13/CO (ROHM18FAD1P010)
+                                                          0.25       3.90 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_134/U1_14/CO (ROHM18FAD1P010)
+                                                          0.25       4.15 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_134/U1_15/CO (ROHM18FAD1P010)
+                                                          0.25       4.40 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_134/U1_16/CO (ROHM18FAD1P010)
+                                                          0.25       4.65 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_134/U1_17/CO (ROHM18FAD1P010)
+                                                          0.25       4.90 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_134/U1_18/CO (ROHM18FAD1P010)
+                                                          0.25       5.15 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_134/U1_19/CO (ROHM18FAD1P010)
+                                                          0.25       5.40 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_134/U1_20/CO (ROHM18FAD1P010)
+                                                          0.25       5.65 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_134/U1_21/CO (ROHM18FAD1P010)
+                                                          0.25       5.90 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_134/U1_22/CO (ROHM18FAD1P010)
+                                                          0.25       6.15 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_134/U1_23/CO (ROHM18FAD1P010)
+                                                          0.25       6.40 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_134/U1_24/CO (ROHM18FAD1P010)
+                                                          0.25       6.64 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_134/U1_25/CO (ROHM18FAD1P010)
+                                                          0.25       6.89 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_134/U1_26/CO (ROHM18FAD1P010)
+                                                          0.25       7.14 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_134/U1_27/CO (ROHM18FAD1P010)
+                                                          0.25       7.39 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_134/U1_28/CO (ROHM18FAD1P010)
+                                                          0.25       7.64 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_134/U1_29/SO (ROHM18FAD1P010)
+                                                          0.54       8.19 r
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_134/SUM[29] (sha256_core_standard_datapath_0_DW01_add_4)
+                                                          0.00       8.19 r
+  P2/DATAPATH/SHA256_CORE/DATAPATH/DIGEST_4[29] (sha256_core_standard_datapath_0)
+                                                          0.00       8.19 r
+  P2/DATAPATH/SHA256_CORE/DIGEST[125] (sha256_core_standard_0)
+                                                          0.00       8.19 r
+  P2/DATAPATH/OUT[125] (pbkdf2_2_dp)                      0.00       8.19 r
+  P2/OUT[125] (pbkdf2_2)                                  0.00       8.19 r
+  OUT_SCRYPT[125] (out)                                   0.00       8.19 r
+  data arrival time                                                  8.19
+
+  clock CLK (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  output external delay                                 -10.00      10.00
+  data required time                                                10.00
+  --------------------------------------------------------------------------
+  data required time                                                10.00
+  data arrival time                                                 -8.19
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.81
+
+
+  Startpoint: P2/DATAPATH/SHA256_CORE/DATAPATH/A_REG_REG_1_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: OUT_SCRYPT[253]
+            (output port clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  scrypt_new_proposed
+                     wl1                   ROHM18_FF
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  P2/DATAPATH/SHA256_CORE/DATAPATH/A_REG_REG_1_/C (ROHM18DFP010)
+                                                          0.00 #     0.00 r
+  P2/DATAPATH/SHA256_CORE/DATAPATH/A_REG_REG_1_/Q (ROHM18DFP010)
+                                                          0.43       0.43 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_130/B[1] (sha256_core_standard_datapath_0_DW01_add_8)
+                                                          0.00       0.43 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_130/U1_1/CO (ROHM18FAD1P010)
+                                                          0.36       0.79 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_130/U1_2/CO (ROHM18FAD1P010)
+                                                          0.25       1.04 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_130/U1_3/CO (ROHM18FAD1P010)
+                                                          0.25       1.29 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_130/U1_4/CO (ROHM18FAD1P010)
+                                                          0.25       1.54 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_130/U1_5/CO (ROHM18FAD1P010)
+                                                          0.25       1.79 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_130/U1_6/CO (ROHM18FAD1P010)
+                                                          0.25       2.04 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_130/U1_7/CO (ROHM18FAD1P010)
+                                                          0.25       2.29 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_130/U1_8/CO (ROHM18FAD1P010)
+                                                          0.25       2.53 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_130/U1_9/CO (ROHM18FAD1P010)
+                                                          0.25       2.78 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_130/U1_10/CO (ROHM18FAD1P010)
+                                                          0.25       3.03 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_130/U1_11/CO (ROHM18FAD1P010)
+                                                          0.25       3.28 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_130/U1_12/CO (ROHM18FAD1P010)
+                                                          0.25       3.53 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_130/U1_13/CO (ROHM18FAD1P010)
+                                                          0.25       3.78 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_130/U1_14/CO (ROHM18FAD1P010)
+                                                          0.25       4.03 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_130/U1_15/CO (ROHM18FAD1P010)
+                                                          0.25       4.28 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_130/U1_16/CO (ROHM18FAD1P010)
+                                                          0.25       4.53 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_130/U1_17/CO (ROHM18FAD1P010)
+                                                          0.25       4.78 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_130/U1_18/CO (ROHM18FAD1P010)
+                                                          0.25       5.03 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_130/U1_19/CO (ROHM18FAD1P010)
+                                                          0.25       5.28 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_130/U1_20/CO (ROHM18FAD1P010)
+                                                          0.25       5.53 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_130/U1_21/CO (ROHM18FAD1P010)
+                                                          0.25       5.78 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_130/U1_22/CO (ROHM18FAD1P010)
+                                                          0.25       6.03 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_130/U1_23/CO (ROHM18FAD1P010)
+                                                          0.25       6.28 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_130/U1_24/CO (ROHM18FAD1P010)
+                                                          0.25       6.53 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_130/U1_25/CO (ROHM18FAD1P010)
+                                                          0.25       6.78 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_130/U1_26/CO (ROHM18FAD1P010)
+                                                          0.25       7.03 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_130/U1_27/CO (ROHM18FAD1P010)
+                                                          0.25       7.28 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_130/U1_28/CO (ROHM18FAD1P010)
+                                                          0.25       7.53 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_130/U1_29/SO (ROHM18FAD1P010)
+                                                          0.54       8.07 r
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_130/SUM[29] (sha256_core_standard_datapath_0_DW01_add_8)
+                                                          0.00       8.07 r
+  P2/DATAPATH/SHA256_CORE/DATAPATH/DIGEST_0[29] (sha256_core_standard_datapath_0)
+                                                          0.00       8.07 r
+  P2/DATAPATH/SHA256_CORE/DIGEST[253] (sha256_core_standard_0)
+                                                          0.00       8.07 r
+  P2/DATAPATH/OUT[253] (pbkdf2_2_dp)                      0.00       8.07 r
+  P2/OUT[253] (pbkdf2_2)                                  0.00       8.07 r
+  OUT_SCRYPT[253] (out)                                   0.00       8.07 r
+  data arrival time                                                  8.07
+
+  clock CLK (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  output external delay                                 -10.00      10.00
+  data required time                                                10.00
+  --------------------------------------------------------------------------
+  data required time                                                10.00
+  data arrival time                                                 -8.07
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.93
+
+
+  Startpoint: P2/DATAPATH/SHA256_CORE/DATAPATH/C_REG_REG_0_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: OUT_SCRYPT[189]
+            (output port clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  scrypt_new_proposed
+                     wl1                   ROHM18_FF
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  P2/DATAPATH/SHA256_CORE/DATAPATH/C_REG_REG_0_/C (ROHM18DFP010)
+                                                          0.00 #     0.00 r
+  P2/DATAPATH/SHA256_CORE/DATAPATH/C_REG_REG_0_/Q (ROHM18DFP010)
+                                                          0.37       0.37 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_132/B[0] (sha256_core_standard_datapath_0_DW01_add_6)
+                                                          0.00       0.37 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_132/U1/Y (ROHM18AND2P010)
+                                                          0.19       0.56 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_132/U1_1/CO (ROHM18FAD1P010)
+                                                          0.24       0.80 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_132/U1_2/CO (ROHM18FAD1P010)
+                                                          0.25       1.05 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_132/U1_3/CO (ROHM18FAD1P010)
+                                                          0.25       1.30 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_132/U1_4/CO (ROHM18FAD1P010)
+                                                          0.25       1.54 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_132/U1_5/CO (ROHM18FAD1P010)
+                                                          0.25       1.79 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_132/U1_6/CO (ROHM18FAD1P010)
+                                                          0.25       2.04 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_132/U1_7/CO (ROHM18FAD1P010)
+                                                          0.25       2.29 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_132/U1_8/CO (ROHM18FAD1P010)
+                                                          0.25       2.54 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_132/U1_9/CO (ROHM18FAD1P010)
+                                                          0.25       2.78 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_132/U1_10/CO (ROHM18FAD1P010)
+                                                          0.25       3.03 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_132/U1_11/CO (ROHM18FAD1P010)
+                                                          0.25       3.28 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_132/U1_12/CO (ROHM18FAD1P010)
+                                                          0.25       3.53 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_132/U1_13/CO (ROHM18FAD1P010)
+                                                          0.25       3.78 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_132/U1_14/CO (ROHM18FAD1P010)
+                                                          0.25       4.02 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_132/U1_15/CO (ROHM18FAD1P010)
+                                                          0.25       4.27 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_132/U1_16/CO (ROHM18FAD1P010)
+                                                          0.25       4.52 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_132/U1_17/CO (ROHM18FAD1P010)
+                                                          0.25       4.77 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_132/U1_18/CO (ROHM18FAD1P010)
+                                                          0.25       5.02 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_132/U1_19/CO (ROHM18FAD1P010)
+                                                          0.25       5.27 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_132/U1_20/CO (ROHM18FAD1P010)
+                                                          0.25       5.51 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_132/U1_21/CO (ROHM18FAD1P010)
+                                                          0.25       5.76 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_132/U1_22/CO (ROHM18FAD1P010)
+                                                          0.25       6.01 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_132/U1_23/CO (ROHM18FAD1P010)
+                                                          0.25       6.26 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_132/U1_24/CO (ROHM18FAD1P010)
+                                                          0.25       6.51 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_132/U1_25/CO (ROHM18FAD1P010)
+                                                          0.25       6.75 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_132/U1_26/CO (ROHM18FAD1P010)
+                                                          0.25       7.00 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_132/U1_27/CO (ROHM18FAD1P010)
+                                                          0.25       7.25 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_132/U1_28/CO (ROHM18FAD1P010)
+                                                          0.25       7.50 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_132/U1_29/SO (ROHM18FAD1P010)
+                                                          0.54       8.04 r
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_132/SUM[29] (sha256_core_standard_datapath_0_DW01_add_6)
+                                                          0.00       8.04 r
+  P2/DATAPATH/SHA256_CORE/DATAPATH/DIGEST_2[29] (sha256_core_standard_datapath_0)
+                                                          0.00       8.04 r
+  P2/DATAPATH/SHA256_CORE/DIGEST[189] (sha256_core_standard_0)
+                                                          0.00       8.04 r
+  P2/DATAPATH/OUT[189] (pbkdf2_2_dp)                      0.00       8.04 r
+  P2/OUT[189] (pbkdf2_2)                                  0.00       8.04 r
+  OUT_SCRYPT[189] (out)                                   0.00       8.04 r
+  data arrival time                                                  8.04
+
+  clock CLK (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  output external delay                                 -10.00      10.00
+  data required time                                                10.00
+  --------------------------------------------------------------------------
+  data required time                                                10.00
+  data arrival time                                                 -8.04
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.96
+
+
+  Startpoint: P2/DATAPATH/SHA256_CORE/DATAPATH/H_REG_REG_0_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: OUT_SCRYPT[29]
+            (output port clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  scrypt_new_proposed
+                     wl1                   ROHM18_FF
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  P2/DATAPATH/SHA256_CORE/DATAPATH/H_REG_REG_0_/C (ROHM18DFP010)
+                                                          0.00 #     0.00 r
+  P2/DATAPATH/SHA256_CORE/DATAPATH/H_REG_REG_0_/Q (ROHM18DFP010)
+                                                          0.38       0.38 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_137/B[0] (sha256_core_standard_datapath_0_DW01_add_1)
+                                                          0.00       0.38 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_137/U1/Y (ROHM18AND2P010)
+                                                          0.19       0.57 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_137/U1_1/CO (ROHM18FAD1P010)
+                                                          0.24       0.80 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_137/U1_2/CO (ROHM18FAD1P010)
+                                                          0.25       1.05 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_137/U1_3/CO (ROHM18FAD1P010)
+                                                          0.25       1.30 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_137/U1_4/CO (ROHM18FAD1P010)
+                                                          0.25       1.55 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_137/U1_5/CO (ROHM18FAD1P010)
+                                                          0.25       1.79 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_137/U1_6/CO (ROHM18FAD1P010)
+                                                          0.25       2.04 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_137/U1_7/CO (ROHM18FAD1P010)
+                                                          0.25       2.29 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_137/U1_8/CO (ROHM18FAD1P010)
+                                                          0.25       2.54 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_137/U1_9/CO (ROHM18FAD1P010)
+                                                          0.25       2.78 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_137/U1_10/CO (ROHM18FAD1P010)
+                                                          0.25       3.03 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_137/U1_11/CO (ROHM18FAD1P010)
+                                                          0.25       3.28 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_137/U1_12/CO (ROHM18FAD1P010)
+                                                          0.25       3.53 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_137/U1_13/CO (ROHM18FAD1P010)
+                                                          0.25       3.77 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_137/U1_14/CO (ROHM18FAD1P010)
+                                                          0.25       4.02 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_137/U1_15/CO (ROHM18FAD1P010)
+                                                          0.25       4.27 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_137/U1_16/CO (ROHM18FAD1P010)
+                                                          0.25       4.52 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_137/U1_17/CO (ROHM18FAD1P010)
+                                                          0.25       4.77 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_137/U1_18/CO (ROHM18FAD1P010)
+                                                          0.25       5.01 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_137/U1_19/CO (ROHM18FAD1P010)
+                                                          0.25       5.26 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_137/U1_20/CO (ROHM18FAD1P010)
+                                                          0.25       5.51 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_137/U1_21/CO (ROHM18FAD1P010)
+                                                          0.25       5.76 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_137/U1_22/CO (ROHM18FAD1P010)
+                                                          0.25       6.00 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_137/U1_23/CO (ROHM18FAD1P010)
+                                                          0.25       6.25 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_137/U1_24/CO (ROHM18FAD1P010)
+                                                          0.25       6.50 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_137/U1_25/CO (ROHM18FAD1P010)
+                                                          0.25       6.75 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_137/U1_26/CO (ROHM18FAD1P010)
+                                                          0.25       7.00 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_137/U1_27/CO (ROHM18FAD1P010)
+                                                          0.25       7.24 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_137/U1_28/CO (ROHM18FAD1P010)
+                                                          0.25       7.49 f
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_137/U1_29/SO (ROHM18FAD1P010)
+                                                          0.54       8.03 r
+  P2/DATAPATH/SHA256_CORE/DATAPATH/ADD_137/SUM[29] (sha256_core_standard_datapath_0_DW01_add_1)
+                                                          0.00       8.03 r
+  P2/DATAPATH/SHA256_CORE/DATAPATH/DIGEST_7[29] (sha256_core_standard_datapath_0)
+                                                          0.00       8.03 r
+  P2/DATAPATH/SHA256_CORE/DIGEST[29] (sha256_core_standard_0)
+                                                          0.00       8.03 r
+  P2/DATAPATH/OUT[29] (pbkdf2_2_dp)                       0.00       8.03 r
+  P2/OUT[29] (pbkdf2_2)                                   0.00       8.03 r
+  OUT_SCRYPT[29] (out)                                    0.00       8.03 r
+  data arrival time                                                  8.03
+
+  clock CLK (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  output external delay                                 -10.00      10.00
+  data required time                                                10.00
+  --------------------------------------------------------------------------
+  data required time                                                10.00
+  data arrival time                                                 -8.03
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.97
+
+
+1
